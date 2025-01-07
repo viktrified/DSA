@@ -1,4 +1,4 @@
-const input = [1, 2, 3, 4, 2, 5, 2, 9];
+const input = [1, 2, 4, 2, 5, 2, 9];
 
 const mostFrequentElement = (arr) => {
   if (arr.length === 0) {
