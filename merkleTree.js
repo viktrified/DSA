@@ -38,12 +38,10 @@ const merkleTree = (leaves) => {
 };
 // console.log(merkleTree(transactions));
 
-const merkleProof = (root, trans, find) => {
+const merkleProof = (root, trans) => {
   if (typeof root !== "string") return "merkle root must be a string";
   if (!trans.every((item) => typeof item === "string"))
     return "all elements in the array must be strings";
-  if (typeof find !== "number")
-    return "transaction index you're looking to verify must be a number";
   if (trans.length === 0) return null;
   if (trans.length === 1) return true;
 
